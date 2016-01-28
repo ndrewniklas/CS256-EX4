@@ -6,13 +6,13 @@
 #include <fstream>
 #include <string>
 
-int main(int argc, int** argv){
+int main(int argc, char** argv){
 	
 	std::string str;
 	int counter = 0;
 	
-	while(int i = 1; i < argc; i++){
-		std::ifstream fin(argv[i])
+	for(int i = 1; i < argc; i++){
+		std::ifstream fin(argv[i]);
 		while(getline(fin,str)){
 			std::cout << str << std::endl;
 		}
