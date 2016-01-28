@@ -6,7 +6,7 @@ int*** alloc3D(int x, int y, int z){
 	for (int i = 0; i < x; i++){
 		result[i] = new int*[y];
 		for (int j = 0; j < y; j++){
-			result[j] = new int[z];
+			result[i][j] = new int[z];
 		}
 	}
 	return result;
