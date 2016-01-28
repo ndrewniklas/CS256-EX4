@@ -3,7 +3,7 @@
 int*** alloc3D(int x, int y, int z){
 	
 	int*** result = new int**[x];
-	for (int i = 0; i < x; ++i){
+	for (int i = 0; i < x; i++){
 		result[i] = new int*[y];
 		for (int j = 0; j < y; j++){
 			result[j] = new int[z];
@@ -13,8 +13,15 @@ int*** alloc3D(int x, int y, int z){
 }
 
 
-void dealloc3D(int*** a, int x, int y){
+void dealloc3D(int*** array, int x, int y){
 	
+	for (int i = 0; i < x; i++){
+		for (int j = 0; j < y; j++){
+			delete [] array[i][j];
+		}
+		delete [] array[i];
+	}
+	delete [] array;
 }
 
 
