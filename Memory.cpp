@@ -1,5 +1,5 @@
 // Andrew NIklas
-// Exercise 2
+// Exercise 4
 // Completed 1/27/2016
 
 #include <iostream>
