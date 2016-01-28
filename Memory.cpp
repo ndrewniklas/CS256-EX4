@@ -1,3 +1,7 @@
+// Andrew NIklas
+// Exercise 2
+// Completed 1/27/2016
+
 #include <iostream>
 
 int*** alloc3D(int x, int y, int z){
